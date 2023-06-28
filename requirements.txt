@@ -1,5 +1,5 @@
 numpy
-sklearn
+scikit-learn
 pandas
 datetime
 matplotlib
@@ -8,3 +8,6 @@ re
 nltk
 wordcloud
 pickle
+Flask
+notebook
+gunicorn
