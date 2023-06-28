@@ -6,7 +6,6 @@ matplotlib
 seaborn
 nltk
 wordcloud
-pickle
 Flask
 notebook
 gunicorn
