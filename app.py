@@ -3,7 +3,7 @@ from flask import Flask, request, render_template
 import numpy as np
 import pandas as pd
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="templates")
 # load the model
 regmodel = pickle.load(open('finalmodel.pkl', 'rb'))
 vectorizer = pickle.load(open('countvectorizer.pkl', 'rb'))
