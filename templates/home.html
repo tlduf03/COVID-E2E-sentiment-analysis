@@ -16,13 +16,14 @@
  <div class="login">
     <h1>Welcome to June's Page!</h1>
 	<h2>Covid19 Sentiment Prediction</h2>
-    <p> -This model is trained on BOW (Bag of Words).<br>
-        Thus, it is sensitive to new words.<br>
-        Here are some top common keywords used in training :<br>
-    
-        <img src= "{{ url_for("static", filename = "words.png") }}" height="400px" width="700px"/><br>
-        (Including keywords with your emotion may result in more accurate prediction)<br>
-    </p>
+        <p> This prototype model is trained on BOW (Bag of Words).<br>
+            Thus, it is sensitive to new words.<br>
+            Here are some top common keywords used in training :<br>
+        
+            <img src= "{{ url_for("static", filename = "words.png") }}" height="400px" width="700px"/><br>
+            (This image is generated during EDA of this project.<br>
+            Including keywords with your emotion may result in more accurate prediction.)<br>
+        </p>
     Show your expression about COVID-19 : 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{url_for('predict')}}"method="post">
