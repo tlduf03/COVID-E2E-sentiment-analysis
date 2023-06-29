@@ -28,7 +28,7 @@ def predict():
     else: # if output is 2
         res = "Positive"
         
-    return render_template('home.html',input_text=input_data, prediction_text="The sentence sentiment is {}".format(res))
+    return render_template('home.html',input_text=input_data, prediction_text=res)
 
 if __name__ == '__main__':
     app.run(debug=True)
